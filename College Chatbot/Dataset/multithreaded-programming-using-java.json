@@ -1,0 +1,15 @@
+{
+    "title": "Multithreaded Programming using Java, KPR Institute Engineering and Technology, Autonomous Engineering Institution, Coimbatore, India",
+    "headings": [
+        "Quick Links",
+        "Study with us",
+        "Life at KPRIET",
+        "Approvals",
+        "General Information"
+    ],
+    "paragraphs": [
+        "The \"Multithreaded Programming using Java\" event is an in-depth workshop designed for Java developers looking to enhance their skills in concurrent programming. This session will explore the fundamentals of multithreading, including thread creation, synchronization, and communication between threads. Participants will gain hands-on experience through practical exercises and real-world examples that demonstrate how to implement and manage threads effectively in Java applications. The workshop will also cover advanced topics such as thread pooling, deadlock resolution, and the use of the Java Concurrency API. Led by experienced Java professionals, this event is perfect for both intermediate and advanced programmers who aim to build high-performance, scalable applications. Attendees will leave with a solid understanding of multithreading concepts and the confidence to apply these techniques to optimize their code. Join us for a dynamic and interactive session that promises to elevate your Java programming expertise.",
+        "21st Century Engineering College in Coimbatore",
+        "World is transforming everyday. In the rapidly evolving engineering landscape, we have an Increased responsibility to transform the engineering education from traditional curriculum to meet the 21st century skills like Creativity, Critical Thinking, Collaboration and Communication. Through our unique and strategic approach we enable our students to learn beyond and prepare them for life long success."
+    ]
+}
