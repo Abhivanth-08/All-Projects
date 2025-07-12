@@ -1,0 +1,67 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Semi-circular wave animation for nav links */
+  .wave-link {
+    @apply relative overflow-hidden z-10;
+  }
+  
+  .wave-link::before {
+    content: '';
+    @apply absolute w-[300%] h-[300%] bg-white rounded-[50%] translate-x-[-50%] transition-all duration-700 ease-in-out z-[-1] transform-gpu opacity-0;
+    transition-property: top, left, opacity;
+    transition-delay: 0.3s;
+    top: 100%;
+    left: var(--x, 50%);
+  }
+  
+  .wave-link:hover::before {
+    @apply top-[-100%] opacity-100;
+    transition-delay: 0s;
+  }
+  
+  .wave-link:hover {
+    @apply text-violet-dark;
+  }
+
+  /* Enhanced text readability classes */
+  .text-with-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  .text-contrast {
+    color: #1f2937;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+  }
+
+  .overlay-text {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+    backdrop-filter: blur(2px);
+  }
+}
+
+@layer utilities {
+  .duration-2000 {
+    transition-duration: 2000ms;
+  }
+
+  /* Text readability utilities */
+  .text-shadow-sm {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .text-shadow-md {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  }
+
+  .bg-overlay {
+    background: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+  }
+}
