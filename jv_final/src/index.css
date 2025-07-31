@@ -1,0 +1,162 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --industrial-blue: #6e59a5; /* Changed to dark purple */
+  --industrial-lightblue: #f0ebff; /* Changed to light purple */
+  --industrial-gray: #6b7280;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@layer utilities {
+  .industrial-blue {
+    color: var(--industrial-blue);
+  }
+  
+  .bg-industrial-blue {
+    background-color: var(--industrial-blue);
+  }
+  
+  .bg-industrial-lightblue {
+    background-color: var(--industrial-lightblue);
+  }
+  
+  .text-industrial-blue {
+    color: var(--industrial-blue);
+  }
+  
+  .border-industrial-blue {
+    border-color: var(--industrial-blue);
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slide-up {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fade-in-delayed {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes fade-in-stagger {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes wave {
+    0% { transform: translateX(-100%); }
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  @keyframes pulse-purple {
+    0%, 100% { background-color: rgba(110, 89, 165, 0.1); }
+    50% { background-color: rgba(110, 89, 165, 0.3); }
+  }
+
+  @keyframes slide-in-left {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes slide-in-right {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes scale-in {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.8s ease-out;
+  }
+
+  .animate-fade-in-delayed {
+    animation: fade-in-delayed 0.8s ease-out;
+  }
+
+  .animate-fade-in-stagger {
+    animation: fade-in-stagger 0.6s ease-out;
+  }
+
+  .animate-pulse-purple {
+    animation: pulse-purple 2s ease-in-out infinite;
+  }
+
+  .animate-slide-in-left {
+    animation: slide-in-left 0.8s ease-out;
+  }
+
+  .animate-slide-in-right {
+    animation: slide-in-right 0.8s ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.6s ease-out;
+  }
+
+  .animate-fade-in-delayed:nth-child(1) { animation-delay: 0.1s; }
+  .animate-fade-in-delayed:nth-child(2) { animation-delay: 0.2s; }
+  .animate-fade-in-delayed:nth-child(3) { animation-delay: 0.3s; }
+  .animate-fade-in-delayed:nth-child(4) { animation-delay: 0.4s; }
+  .animate-fade-in-delayed:nth-child(5) { animation-delay: 0.5s; }
+
+  .animate-fade-in-stagger:nth-child(1n) { animation-delay: 0.1s; }
+  .animate-fade-in-stagger:nth-child(2n) { animation-delay: 0.2s; }
+  .animate-fade-in-stagger:nth-child(3n) { animation-delay: 0.3s; }
+  .animate-fade-in-stagger:nth-child(4n) { animation-delay: 0.4s; }
+
+  /* Wave animation for navigation links */
+  .wave-link {
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+  }
+
+  .wave-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: var(--x, 0%);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+    pointer-events: none;
+  }
+
+  .wave-link:hover::before {
+    animation: wave 0.6s ease-in-out;
+  }
+}
