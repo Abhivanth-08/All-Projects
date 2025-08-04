@@ -1,6 +1,6 @@
-# 🔐 AI-Powered Visual PII Detection & Redaction Pipeline
+#  AI-Powered Visual PII Detection & Redaction Pipeline
 
-## 🧠 Overview
+##  Overview
 
 This project implements a **multi-stage privacy-preserving AI pipeline** designed to detect and extract Personally Identifiable Information (PII) from visual documents. The current prototype is capable of parsing scanned PDFs, extracting embedded images and text, identifying PII, and exporting both anonymized and human-readable outputs.
 
@@ -8,9 +8,9 @@ It supports layout-aware processing, multilingual handling (planned), and is ada
 
 ---
 
-## ✅ Current Progress
+##  Current Progress
 
-### 📁 Modules & Workflow
+### Modules & Workflow
 
 The following components have been implemented and tested:
 
@@ -31,7 +31,7 @@ The following components have been implemented and tested:
      - The original **enhanced PDF**
      - The generated **PII annotations in JSON**
 
-### 🔍 Test Setup
+### Test Setup
 
 - Tested using **4 input images converted into a PDF**.
 - End-to-end pipeline has been verified for:
@@ -42,7 +42,7 @@ The following components have been implemented and tested:
 
 ---
 
-## 📌 Files Overview
+## Files Overview
 
 | File/Folder            | Description                                                                 |
 |------------------------|-----------------------------------------------------------------------------|
@@ -56,23 +56,23 @@ The following components have been implemented and tested:
 
 ---
 
-## 🚧 Next Steps (Post-Prototype Phase)
+##  Next Steps (Post-Prototype Phase)
 
 We are actively working on:
-- 🔒 **Visual Redaction Layer:** Automatically blur or mask faces, signatures, and text overlays using bounding boxes.
-- 🧩 **Consent-Aware Redaction:** Allow users to specify which PII elements can be retained.
-- 🗂 **Editable Review UI:** Human-in-the-loop verification and redaction editor (web-based).
-- 🌐 **Language & Layout Support:** Extend support for multilingual documents and noisy real-world layouts (e.g., scanned forms).
-- 🔎 **Audit Logs & Compliance Mode:** To ensure GDPR/HIPAA-ready pipelines.
-- 📦 **Docker Deployment & API Server:** For cloud/on-prem integration.
+- **Visual Redaction Layer:** Automatically blur or mask faces, signatures, and text overlays using bounding boxes.
+- **Consent-Aware Redaction:** Allow users to specify which PII elements can be retained.
+- **Editable Review UI:** Human-in-the-loop verification and redaction editor (web-based).
+- **Language & Layout Support:** Extend support for multilingual documents and noisy real-world layouts (e.g., scanned forms).
+- **Audit Logs & Compliance Mode:** To ensure GDPR/HIPAA-ready pipelines.
+- **Docker Deployment & API Server:** For cloud/on-prem integration.
 
 ---
 
-## 🔗 Repository Access
+## Repository Access
 
 > *The `.env` file has been intentionally excluded to protect API credentials. Please contact the authors for credentials or a demo.*
 
 ---
 
-### 🙌 We look forward to advancing this into a production-ready, fully anonymized document redaction engine — and showcasing it at the NASSCOM finals!
+### We look forward to advancing this into a production-ready, fully anonymized document redaction engine — and showcasing it at the NASSCOM finals!
 
