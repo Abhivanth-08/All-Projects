@@ -1,0 +1,24 @@
+{
+  "pii_entities": [
+    "Boder",
+    "EKELLDS J2 DAHIEL",
+    "51 WEET S2nd STREET",
+    "October",
+    "1997 31",
+    "Orrin G _ Hatch",
+    "Grassley",
+    "Scott Yasuda",
+    "Barry M. Krivisky"
+  ],
+  "pii_types": [
+    "Name",
+    "Address",
+    "Address",
+    "Birthday",
+    "Birthday",
+    "Name",
+    "Name",
+    "Name",
+    "Name"
+  ]
+}
